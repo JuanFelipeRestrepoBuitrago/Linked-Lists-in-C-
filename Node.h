@@ -1,5 +1,5 @@
 //
-// Created by Usuario on 1/09/2022.
+// Created by Juan Felipe Restrepo on 1/09/2022.
 //
 
 #ifndef CLASELISTASENLAZADAS_NODE_H
@@ -15,9 +15,9 @@ public:
     Node(int value);
     Node(int value, Node * next);
     int getValue();
-    void setValue(int value);
+    void setValue(int data);
     Node * getNext();
-    void setNext(Node * next);
+    void setNext(Node * following);
 };
 
 

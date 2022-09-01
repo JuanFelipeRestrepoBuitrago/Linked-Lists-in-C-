@@ -19,12 +19,12 @@ Node::Node(int value, Node *next) {
 int Node::getValue() {
     return this -> value;
 }
-void Node::setValue(int value) {
-    this -> value = value;
+void Node::setValue(int data) {
+    this -> value = data;
 }
 Node * Node::getNext() {
     return this -> next;
 }
-void Node::setNext(Node *next) {
-    this -> next = next;
+void Node::setNext(Node *following) {
+    this -> next = following;
 }

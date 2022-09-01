@@ -76,7 +76,10 @@ Node* LinkedList::deleteValue(Node* current, int data) {
     if(current == nullptr) {
         return nullptr;
     }else if(current -> getValue() == data){
-        return current -> getNext();
+        Node * new_next = current -> getNext();
+        delete current;
+
+        return new_next;
     }else{
         current -> setNext(deleteValue(current -> getNext(), data));
         return current;

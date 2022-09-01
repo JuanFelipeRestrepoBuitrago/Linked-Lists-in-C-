@@ -1,5 +1,5 @@
 //
-// Created by Juan Felipe Restrepo Buitrago on 1/09/2022.
+// Created by Juan Felipe Restrepo on 1/09/2022.
 //
 
 #ifndef CLASELISTASENLAZADAS_LINKEDLIST_H
