@@ -54,3 +54,123 @@ void LinkedList::printList(Node * current) {
         cout << NULL <<endl;
     }
 }
+
+void LinkedList::deleteIndex(int index) {
+    Node * current = this -> head;
+    Node * previous = nullptr;
+    int i = 0;
+    while (current != nullptr && i < index) {
+        previous = current;
+        current = current -> getNext();
+        i++;
+    }
+    if (current == nullptr) {
+        cout << "No existe una posicion en la lista con ese indice" << endl;
+    }else{
+        previous -> setNext(current -> getNext());
+        delete current;
+    }
+}
+
+Node* LinkedList::deleteValue(Node* current, int data) {
+    if(current == nullptr) {
+        return nullptr;
+    }else if(current -> getValue() == data){
+        return current -> getNext();
+    }else{
+        current -> setNext(deleteValue(current -> getNext(), data));
+        return current;
+    }
+}
+
+int LinkedList::getData(int index) {
+    Node * current = this -> head;
+    while(current != nullptr && index > 0) {
+        current = current -> getNext();
+        index--;
+    }
+
+    return current -> getValue();
+}
+
+int LinkedList::getIndex(int data) {
+    Node * current = this -> head;
+    int index = 0;
+
+    while (current != nullptr) {
+        if (current -> getValue() == data) {
+            return index;
+        }
+        current = current -> getNext();
+        index++;
+    }
+    return -1;
+}
+
+bool LinkedList::searchIndex(int index) {
+    Node * current = this -> head;
+
+    while (index > 0 && current != nullptr) {
+        current = current -> getNext();
+        index--;
+    }
+
+    if (index == 0 && current != nullptr) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+bool LinkedList::searchValue(int data) {
+    Node * current = this -> head;
+
+    while (current != nullptr) {
+        if (current -> getValue() == data) {
+            return true;
+        }
+        current = current -> getNext();
+    }
+
+    return false;
+}
+
+int LinkedList::getSize() {
+    Node * current = this -> head;
+    int length = 0;
+
+    while (current != nullptr) {
+        current = current -> getNext();
+        length++;
+    }
+
+    return length;
+}
+
+Node* LinkedList::nodeInIndex(int index) {
+    Node * current = this -> head;
+
+    while (index > 0 && current != nullptr){
+        current = current -> getNext();
+        index--;
+    }
+
+    if (current == nullptr){
+        return nullptr;
+    }else{
+        return current;
+    }
+}
+
+Node* LinkedList::nodeWithData(int data) {
+    Node * current = this -> head;
+
+    while (current != nullptr) {
+        if (current -> getValue() == data) {
+            return current;
+        }
+        current = current -> getNext();
+    }
+
+    return nullptr;
+}

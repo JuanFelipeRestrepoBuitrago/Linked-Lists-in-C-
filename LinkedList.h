@@ -20,8 +20,8 @@ public:
     void insertAtTheTop(int data);
     void insertAtTheEnd(int data);
 
-    void deleteValue(int data);
-    void deleteIndex(int index);
+    Node* deleteValue(Node* current, int data);
+    void deleteIndex( int index);
 
     bool searchValue(int data);
     bool searchIndex(int index);
@@ -30,8 +30,8 @@ public:
     int getData(int index);
     int getSize();
 
-    int nodeInIndex(int index);
-    int nodeWithData(int data);
+    Node* nodeWithData(int data);
+    Node* nodeInIndex(int index);
 
     Node * getLast(Node * current);
     void printList(Node * current);
