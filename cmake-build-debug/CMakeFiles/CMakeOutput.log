@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programación/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programacion/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
@@ -45,21 +45,21 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programación/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programacion/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programación/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programacion/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Aplicaciones/CLion/CLion 2022.2.1/bin/ninja/win/ninja.exe cmTC_d88de && [1/2] Building C object CMakeFiles\cmTC_d88de.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_d88de.exe
+Run Build Command(s):D:/Aplicaciones/CLion/CLion 2022.2.1/bin/ninja/win/ninja.exe cmTC_6f1fc && [1/2] Building C object CMakeFiles\cmTC_6f1fc.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_6f1fc.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programación/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Archivos de Aplicaciones/CLion/PROJECTS/Lenguajes de Programacion/ClaseListasEnlazadas/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Aplicaciones/CLion/CLion 2022.2.1/bin/ninja/win/ninja.exe cmTC_101e4 && [1/2] Building CXX object CMakeFiles\cmTC_101e4.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_101e4.exe
+Run Build Command(s):D:/Aplicaciones/CLion/CLion 2022.2.1/bin/ninja/win/ninja.exe cmTC_035db && [1/2] Building CXX object CMakeFiles\cmTC_035db.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_035db.exe
 
 
 

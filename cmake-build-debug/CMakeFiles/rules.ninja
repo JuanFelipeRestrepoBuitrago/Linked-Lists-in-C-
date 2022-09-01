@@ -47,7 +47,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "D:\Aplicaciones\CLion\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\Archivos de Aplicaciones\CLion\PROJECTS\Lenguajes de Programación\ClaseListasEnlazadas" -B"D:\Archivos de Aplicaciones\CLion\PROJECTS\Lenguajes de Programación\ClaseListasEnlazadas\cmake-build-debug"
+  command = "D:\Aplicaciones\CLion\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\Archivos de Aplicaciones\CLion\PROJECTS\Lenguajes de Programacion\ClaseListasEnlazadas" -B"D:\Archivos de Aplicaciones\CLion\PROJECTS\Lenguajes de Programacion\ClaseListasEnlazadas\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
