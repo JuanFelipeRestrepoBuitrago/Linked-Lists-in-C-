@@ -19,9 +19,11 @@ public:
     void createLinkedList(int data);
     void insertAtTheTop(int data);
     void insertAtTheEnd(int data);
+    bool insertAtTheIndex(int data, int index);
 
     Node* deleteValue(Node* current, int data);
     void deleteIndex( int index);
+    void deleteList(Node* current);
 
     bool searchValue(int data);
     bool searchIndex(int index);

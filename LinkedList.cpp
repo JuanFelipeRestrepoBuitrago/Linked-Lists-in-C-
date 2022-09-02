@@ -51,7 +51,7 @@ void LinkedList::printList(Node * current) {
         cout << current -> getValue() << " -> ";
         this -> printList(current -> getNext());
     }else{
-        cout << NULL <<endl;
+        cout << "NULL" <<endl;
     }
 }
 
@@ -66,6 +66,9 @@ void LinkedList::deleteIndex(int index) {
     }
     if (current == nullptr) {
         cout << "No existe una posicion en la lista con ese indice" << endl;
+    }else if (previous == nullptr) {
+        this->head = current->getNext();
+        delete current;
     }else{
         previous -> setNext(current -> getNext());
         delete current;
@@ -176,4 +179,34 @@ Node* LinkedList::nodeWithData(int data) {
     }
 
     return nullptr;
+}
+
+bool LinkedList::insertAtTheIndex(int data, int index) {
+    Node * newNode = new Node(data);
+    Node * current = this -> head;
+    Node * previous = nullptr;
+    int i = 0;
+    while (current != nullptr && i < index) {
+        previous = current;
+        current = current -> getNext();
+        i++;
+    }
+    if (current == nullptr) {
+        cout << "No existe una posicion en la lista con ese indice" << endl;
+        return false;
+    }else{
+        previous -> setNext(newNode);
+        newNode -> setNext(current);
+        return true;
+    }
+}
+
+void LinkedList::deleteList(Node *current) {
+    if (current == nullptr) {
+        this -> head = nullptr;
+    } else {
+        deleteList(current -> getNext());
+
+        delete current;
+    }
 }
