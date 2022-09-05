@@ -100,6 +100,9 @@ int main() {
                         }
                         break;
                     case 5:
+                        if (list.getHead() == nullptr) {
+                            throw out_of_range("Lista Vacia, No Hay Elementos para Eliminar");
+                        }
                         cout << "Ingrese el Valor a Eliminar: ";
                         cin >> data;
 
@@ -112,6 +115,9 @@ int main() {
 
                         break;
                     case 6:
+                        if (list.getHead() == nullptr) {
+                            throw out_of_range("Lista Vacia, No Hay Elementos para Eliminar");
+                        }
                         cout << "Ingrese la Posicion del Elemento a Eliminar: ";
                         cin >> position;
 
@@ -124,6 +130,9 @@ int main() {
 
                         break;
                     case 7:
+                        if (list.getHead() == nullptr) {
+                            throw out_of_range("Lista Vacia, No Hay Elementos para Buscar");
+                        }
                         cout << "Ingrese el Valor a Buscar: ";
                         cin >> data;
 
@@ -139,6 +148,9 @@ int main() {
 
                         break;
                     case 8:
+                        if (list.getHead() == nullptr) {
+                            throw out_of_range("Lista Vacia, No Hay Elementos para Buscar");
+                        }
                         cout << "Ingrese la Posicion del Elemento a Buscar: ";
                         cin >> position;
 
@@ -157,6 +169,9 @@ int main() {
                         cout << "El Tamaño de la Lista es: " << list.getSize() << endl;
                         break;
                     case 10:
+                        if (list.getHead() == nullptr) {
+                            throw out_of_range("Lista Vacia");
+                        }
                         list.deleteList(list.getHead());
                         cout << "Lista Eliminada Exitosamente" << endl;
                         break;
@@ -169,6 +184,8 @@ int main() {
                 cin.ignore();
                 cout << "Error: Debe Ingresar un Numero Entero Menor de 11 Digitos" << endl;
                 continue;
+            }catch (out_of_range & e){
+                cout << e.what() << endl;
             }
             break;
         }
