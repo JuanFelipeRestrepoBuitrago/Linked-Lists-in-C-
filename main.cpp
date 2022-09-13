@@ -38,7 +38,7 @@ int main() {
             continue;
         }catch (ios_base::failure & e){
             cin.clear();
-            cin.ignore();
+            cin.ignore(INT_MAX, '\n');
             cout << "Error: Debe Ingresar un Numero Entero Menor de 11 Digitos" << endl;
             continue;
         }
